@@ -173,7 +173,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZGRmNDUx" projecturn="a.cGVyc29uYWw6dWUyZGRmNDUxIzIwMTgxMTE1MTYwNTA1NzI2" f3durn="urn:adsk.wipprod:dm.lineage:2nHuK2D1RCSFR9E3u8aotQ" pcbguid="dfb59e06-6e6a-4af3-bb2f-527a9cc73546" lastpulledtime="" lastsyncedchangeguid="31ac78c1-b978-9bea-e800-801bb7169cfa"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZGRmNDUx" projecturn="a.cGVyc29uYWw6dWUyZGRmNDUxIzIwMTgxMTE1MTYwNTA1NzI2" f3durn="urn:adsk.wipprod:dm.lineage:2nHuK2D1RCSFR9E3u8aotQ" pcbguid="dfb59e06-6e6a-4af3-bb2f-527a9cc73546" lastpulledtime="" lastsyncedchangeguid="004961a1-07b7-d127-8ee5-e5869702327e"/>
 <plain>
 <wire x1="-3.571875" y1="0" x2="91.42" y2="0" width="0" layer="20"/>
 <wire x1="91.42" y1="0" x2="91.42" y2="54.28" width="0" layer="20"/>
@@ -2239,6 +2239,36 @@ design rules under a new name.</description>
 <contactref element="D4" pad="2"/>
 <wire x1="86.8225" y1="22.780625" x2="83.34375" y2="26.259375" width="0.508" layer="1"/>
 <wire x1="83.34375" y1="27.65125" x2="83.34375" y2="26.259375" width="0.508" layer="1"/>
+</signal>
+<signal name="GND1">
+<via x="34.686875" y="31.035625" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND2">
+<via x="32.7025" y="27.066875" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND3">
+<via x="8.493125" y="43.735625" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND4">
+<via x="10.874375" y="41.75125" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND5">
+<via x="6.111875" y="44.92625" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND6">
+<via x="35.480625" y="27.066875" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND7">
+<via x="35.08375" y="23.891875" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND8">
+<via x="33.893125" y="16.748125" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND9">
+<via x="87.868125" y="36.591875" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="GND10">
+<via x="85.09" y="32.22625" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
