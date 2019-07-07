@@ -187,6 +187,8 @@
 <text x="88.10625" y="20.6375" size="1.778" layer="25">+</text>
 <text x="1.984375" y="26.19375" size="1.778" layer="25">picsil Sense
 P2 Rev A</text>
+<text x="45.640625" y="21.43125" size="0.8128" layer="25">CS  DC  RST MOSI SCK VCC GND</text>
+<text x="16.271875" y="50.8" size="1.778" layer="25">+</text>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
@@ -1323,15 +1325,12 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-08585" x="123.19" y="-85.09" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="33.02" y="34.417" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="FRAME-LETTER" x="-73.66" y="13.97" smashed="yes">
-<attribute name="_EXTERNAL_" value="1" x="-73.66" y="13.97" size="1.778" layer="27" display="off"/>
-</element>
 <element name="FRAME2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="FRAME-LETTER" x="-73.66" y="25.4" smashed="yes"/>
 <element name="FRAME3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="FRAME-LETTER" x="-72.39" y="35.56" smashed="yes"/>
 <element name="H1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA07-1" package3d_urn="urn:adsk.eagle:package:8341/1" value="SPI DISPLAY" x="53.34" y="24.13" smashed="yes">
 <attribute name="MF" value="" x="100.33" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="100.33" y="-88.9" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.45" y="25.781" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="42.06875" y="23.796625" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="100.33" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="100.33" y="-88.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="50.8" y="21.209" size="1.27" layer="27" ratio="10"/>
@@ -1378,7 +1377,7 @@ design rules under a new name.</description>
 </element>
 <element name="J5" library="SparkFun-Connectors" package="JST-2-SMD" value="S2B-PH-SM4-TB(LF)(SN)" x="11.43" y="49.53" smashed="yes">
 <attribute name="MFG" value="S2B-PH-SM4-TB(LF)(SN)" x="34.29" y="-29.21" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.953" y="51.308" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="5.349875" y="51.308" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-11443" x="34.29" y="-29.21" size="1.778" layer="27" display="off"/>
 <attribute name="SF_ID" value="PRT-08612" x="34.29" y="-29.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="9.779" y="50.165" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -1524,6 +1523,8 @@ design rules under a new name.</description>
 <element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="0.79375" y="4.365625" smashed="yes"/>
 <element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="0.79375" y="50.00625" smashed="yes"/>
 <element name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,2" package3d_urn="urn:adsk.eagle:package:14275/1" value="MOUNT-HOLE3.2" x="87.3125" y="4.365625" smashed="yes"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="FRAME-LETTER" x="-73.421875" y="-12.303125" smashed="yes"/>
+<element name="FRAME4" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="CREATIVE_COMMONS" package3d_urn="urn:adsk.eagle:package:37121/1" value="FRAME-LETTER" x="-73.421875" y="-21.034375" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">

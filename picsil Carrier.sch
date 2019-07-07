@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -78,7 +78,7 @@
 <layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="112bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="113" name="LOGO" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
@@ -87,7 +87,7 @@
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="no"/>
 <layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="121bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -9428,9 +9428,6 @@ FRAME-LETTER</description>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1">
-<attribute name="_EXTERNAL_" value="1"/>
-</part>
 <part name="FRAME2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1"/>
 <part name="FRAME3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1"/>
 <part name="J6" library="SamacSys_Parts" deviceset="47346-1001" device=""/>
@@ -9443,6 +9440,8 @@ FRAME-LETTER</description>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.2" package3d_urn="urn:adsk.eagle:package:14275/1"/>
+<part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1"/>
+<part name="FRAME4" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="" package3d_urn="urn:adsk.eagle:package:37121/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -9452,6 +9451,7 @@ FRAME-LETTER</description>
 <text x="81.28" y="170.18" size="2.54" layer="94">picsil Particle Gen3 Carrier Board for OneWire Sensors</text>
 <text x="167.64" y="10.16" size="2.7432" layer="94">Reid Forrest</text>
 <text x="241.3" y="7.62" size="2.7432" layer="94">A</text>
+<text x="78.74" y="2.54" size="1.778" layer="97">Based in part on the Gen3 Carrier by Chip McClelland</text>
 </plain>
 <instances>
 <instance part="U11" gate="U1" x="167.64" y="104.14" smashed="yes">
@@ -9539,33 +9539,32 @@ FRAME-LETTER</description>
 <instance part="SUPPLY5" gate="GND" x="78.74" y="114.3" smashed="yes">
 <attribute name="VALUE" x="76.835" y="111.125" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="12.7" y="25.4" smashed="yes">
-<attribute name="NAME" x="34.29" y="33.02" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="34.29" y="30.48" size="1.778" layer="96" align="center-left"/>
+<instance part="J1" gate="G$1" x="12.7" y="30.48" smashed="yes">
+<attribute name="NAME" x="34.29" y="38.1" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="34.29" y="35.56" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="58.42" y="25.4" smashed="yes">
-<attribute name="NAME" x="80.01" y="33.02" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="80.01" y="30.48" size="1.778" layer="96" align="center-left"/>
+<instance part="J2" gate="G$1" x="58.42" y="30.48" smashed="yes">
+<attribute name="NAME" x="80.01" y="38.1" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="80.01" y="35.56" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="J3" gate="G$1" x="104.14" y="25.4" smashed="yes">
-<attribute name="NAME" x="125.73" y="33.02" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="125.73" y="30.48" size="1.778" layer="96" align="center-left"/>
+<instance part="J3" gate="G$1" x="104.14" y="30.48" smashed="yes">
+<attribute name="NAME" x="125.73" y="38.1" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="125.73" y="35.56" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="SUPPLY6" gate="GND" x="99.06" y="10.16" smashed="yes">
-<attribute name="VALUE" x="97.155" y="6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY6" gate="GND" x="99.06" y="15.24" smashed="yes">
+<attribute name="VALUE" x="97.155" y="12.065" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="GND" x="53.34" y="10.16" smashed="yes">
-<attribute name="VALUE" x="51.435" y="6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY3" gate="GND" x="53.34" y="15.24" smashed="yes">
+<attribute name="VALUE" x="51.435" y="12.065" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="5.08" y="10.16" smashed="yes">
-<attribute name="VALUE" x="3.175" y="6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="GND" x="5.08" y="15.24" smashed="yes">
+<attribute name="VALUE" x="3.175" y="12.065" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
-<instance part="FRAME1" gate="V" x="147.32" y="0" smashed="yes">
+<instance part="FRAME4" gate="V" x="147.32" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="162.814" y="17.78" size="2.7432" layer="94" font="vector"/>
-<attribute name="_EXTERNAL_" x="147.32" y="0" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -9626,20 +9625,20 @@ FRAME-LETTER</description>
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="12.7" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="12.7" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="17.78" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="30.48" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="12.7" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="17.78" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -9783,8 +9782,8 @@ FRAME-LETTER</description>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="104.14" y1="20.32" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
-<label x="104.14" y="15.24" size="1.778" layer="95"/>
+<wire x1="104.14" y1="25.4" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
+<label x="104.14" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OW2" class="0">
@@ -9800,8 +9799,8 @@ FRAME-LETTER</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="58.42" y1="20.32" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-<label x="58.42" y="15.24" size="1.778" layer="95"/>
+<wire x1="58.42" y1="25.4" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<label x="58.42" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OW1" class="0">
@@ -9817,8 +9816,8 @@ FRAME-LETTER</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="12.7" y1="20.32" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
-<label x="12.7" y="15.24" size="1.778" layer="95"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="12.7" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OW0" class="0">
@@ -9921,18 +9920,18 @@ FRAME-LETTER</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="MH2"/>
-<wire x1="38.1" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<label x="40.64" y="25.4" size="1.778" layer="95"/>
+<wire x1="38.1" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<label x="40.64" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="MH2"/>
-<wire x1="83.82" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<label x="86.36" y="25.4" size="1.778" layer="95"/>
+<wire x1="83.82" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<label x="86.36" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="MH2"/>
-<wire x1="129.54" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
-<label x="132.08" y="25.4" size="1.778" layer="95"/>
+<wire x1="129.54" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+<label x="132.08" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIS_RST" class="0">
