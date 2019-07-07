@@ -179,10 +179,6 @@
 <wire x1="91.42" y1="0" x2="91.42" y2="54.28" width="0" layer="20"/>
 <wire x1="91.42" y1="54.28" x2="-3.571875" y2="54.28" width="0" layer="20"/>
 <wire x1="-3.571875" y1="54.28" x2="-3.571875" y2="0" width="0" layer="20"/>
-<hole x="22.86" y="48.26" drill="1"/>
-<hole x="22.86" y="30.48" drill="1"/>
-<hole x="68.58" y="30.48" drill="1"/>
-<hole x="68.58" y="48.26" drill="1"/>
 <text x="6.746875" y="40.878125" size="1.778" layer="25">LIPO BAT</text>
 <text x="88.10625" y="20.6375" size="1.778" layer="25">+</text>
 <text x="1.984375" y="26.19375" size="1.778" layer="25">picsil Sense
