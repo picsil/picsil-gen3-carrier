@@ -1,4 +1,5 @@
 # picsil-gen3-carrier
+A carrier board for Particle Boron with support for three OneWire or dry contact sensors, onboard 32KB FRAM and DS18B20 temperature sensor, and ESD protected sensor inputs.
 
 ## NOTE
 There are known problems with this circuit. Be aware of this before using it, since you will need to make changes.
